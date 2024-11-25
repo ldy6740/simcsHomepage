@@ -6,6 +6,7 @@
 
 	<script src="/common/js/axios/axios.min.js"></script>
 	
+	<link rel="stylesheet" href="/common/css/style.css">
 	<link rel="stylesheet" href="common/js/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 	
 	<title>Document</title>
@@ -52,11 +53,38 @@
 
 	<div class="nav_wrapper d-flex justify-content-between px-5 py-2 border border-black">
 		<a href="javascript:void(0);" class="navbar-brand">Logo</a>
-		<ul class="navbar-nav d-flex justify-content-end">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
 			<li class="nav-item">1</li>
 			<li class="nav-item">2</li>
 			<li class="nav-item">3</li>
 		</ul>
 	</div>
+
+	<nav class="nav-wrapper navbar navbar-expand-sm bg-body-tertiary d-flex justify-content-between px-5">
+		<div class="inner mx-auto d-flex justify-content-between border border-black align-items-center">
+			<a href="javascript:void(0);" class="navbar-brand">Logo</a>
+			<ul class="navbar-nav grid gap-0 column-gap-3">
+				<li class="navbar-item">안녕하세요</li>
+				<li class="navbar-item">여기는</li>
+				<li class="navbar-item">집 입니다.</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="text" readonly value="test" class="form-control" id="inputPassword">
+    </div>
+  </div>
+
+	<label for="exampleColorInput" class="form-label">Color picker</label>
+<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
 </body>
 </html>
