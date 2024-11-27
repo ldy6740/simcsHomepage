@@ -1,3 +1,23 @@
+@import url("./reset.css");
+@import url("../font/pretendard.css");
+
 .inner {
 	width: 1200px;
+}
+
+.mainpage_banner {
+	position: relative;
+	background:url(/images/main_banner_img01.png);
+	height: 730px;
+}
+.main_banner_txt_wrap {
+	color: #fff;
+	position: absolute;
+	top: 250px;
+	left: 310px;
+	font-family: Pretendard, sans-serif;
+}
+.main_banner_txt_wrap > p:last-child {
+	margin-top: 30px;
+	font-size: 16px;
 }
