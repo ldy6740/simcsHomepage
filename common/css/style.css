@@ -141,3 +141,16 @@
 	height: 600px;
 	background: #cecece;
 }
+
+.product-info-cont-wrap-02 {
+	background: #f2f2f2;
+}
+.product-info-cont-wrap-02 .custom-nav-tabs {
+	width: 100%;
+}
+
+.product-info-cont-wrap-02 .custom-tab-content {
+	width: 100%;
+	height: 800px;
+	text-align: center;
+}
