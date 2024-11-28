@@ -73,3 +73,71 @@
 	color: #fff;
 	padding: 70px 0 40px;
 }
+
+.sub-cont-top-banner {
+	background: url("../../images/subpage_top-banner_img.png");
+	height: 240px;
+	color: #fff;
+	position:relative;
+}
+.sub-cont-top-banner .txt-wrap {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.subpage-cont-wrap-02 {
+	height: 661px;
+	background: #f2f2f2;
+
+	padding: 70px 0;
+}
+.subpage-cont-wrap-02 .cont-item {
+	position: relative;
+}
+.subpage-cont-wrap-02 .cont-item .line {
+	width: 2px;
+	height: 400px;
+	background: #2d2d2d;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.subpage-cont-wrap-02 .cont-item .item {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #3595d5;
+} 
+.subpage-cont-wrap-02 .cont-item .item p {
+	position: absolute;
+	width: 250px;
+}
+.subpage-cont-wrap-02 .cont-item .item.this::after {
+	content: "";
+	display: inline-block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	border-radius: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+}
+
+.subpage-cont-wrap-03 {
+	padding: 70px 0;
+}
+.subpage-cont-wrap-03 .map-area {
+	width: 100%;
+	height: 600px;
+	background: #cecece;
+}
