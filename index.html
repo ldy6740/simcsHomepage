@@ -20,8 +20,8 @@
 			<ul class="navbar-nav grid gap-0 column-gap-3">
 				<li class="navbar-item"><a class="nav-link" href="/pages/companyInfo.html">회사소개</a></li>
 				<li class="navbar-item"><a class="nav-link" href="/pages/productInfo.html">제품소개</a></li>
-				<li class="navbar-item"><a class="nav-link" href="javascript:void(0);">견적문의</a></li>
-				<li class="navbar-item"><a class="nav-link" href="javascript:void(0);">고객센터</a></li>
+				<li class="navbar-item"><a class="nav-link" href="javascript:void(0);" onclick="navAlertTxt('견적문의')">견적문의</a></li>
+				<li class="navbar-item"><a class="nav-link" href="javascript:void(0);" onclick="navAlertTxt('고객센터')">고객센터</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -94,7 +94,7 @@
 					</p>
 				</p>
 			</div>
-			<button class="cont-more-btn btn btn-light rounded-pill text-primary fs-5 px-4 py-2">자세히 보기</button>	
+			<a href="/pages/productInfo.html" class="cont-more-btn btn btn-light rounded-pill text-primary fs-5 px-4 py-2">자세히 보기</a>	
 		</div>
 	</section>	
 	<footer class="footer-area">
@@ -111,7 +111,9 @@
 				</div>
 			</div>
 			<div class="right-footer text-end d-flex flex-column align-items-end justify-content-between pt-5">
-				<button class="contactus-btn btn btn-light rounded-pill text-primary px-4">문의하기</button>
+				<button type="button" class="contactus-btn btn btn-light rounded-pill text-primary px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+					문의하기
+				</button>
 				<div class="logo-box">
 					<img src="/images/footer_logo.png" alt="footer-logo" class="logo">
 					<p class="copyright-txt">Copyright(c) 2021 (주)에스아이메카닉스 All Right Reserved.</p>
@@ -119,5 +121,29 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="staticBackdropLabel">문의하기</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					견적문의는 아래 번호로 연락 부탁드립니다.
+					<br><br>
+					연락처 : 070-8011-9770
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/common/js/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+	<script>
+		const myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'))
+	</script>
 </body>
 </html>
