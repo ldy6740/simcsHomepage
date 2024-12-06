@@ -6,99 +6,94 @@
 
 	<script src="/common/js/axios/axios.min.js"></script>
 	
-	<link rel="stylesheet" href="/common/css/style.css">
-	<link rel="stylesheet" href="common/js/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 	
-	<title>simcs Homepage</title>
+	<link rel="stylesheet" href="../common/css/style.css">
+	<link rel="stylesheet" href="../common/js/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+	
+	<title>회사소개</title>
 </head>
 <body>
 	<nav class="nav-wrapper navbar navbar-expand-sm sticky-top bg-body-tertiary d-flex justify-content-between px-5">
 		<div class="inner mx-auto d-flex justify-content-between  align-items-center">
-			<a href="javascript:void(0);" class="navbar-brand">
+			<a href="/" class="navbar-brand">
 				<img src="/images/main_logo.png" alt="메인 로고">
 			</a>
 			<ul class="navbar-nav grid gap-0 column-gap-3">
-				<li class="navbar-item"><a class="nav-link" href="/pages/companyInfo.html">회사소개</a></li>
+				<li class="navbar-item"><a class="nav-link" href="javascript:void(0);">회사소개</a></li>
 				<li class="navbar-item"><a class="nav-link" href="/pages/productInfo.html">제품소개</a></li>
 				<li class="navbar-item"><a class="nav-link" href="javascript:void(0);" onclick="navAlertTxt('견적문의')">견적문의</a></li>
 				<li class="navbar-item"><a class="nav-link" href="javascript:void(0);" onclick="navAlertTxt('고객센터')">고객센터</a></li>
 			</ul>
 		</div>
 	</nav>
-	<section class="mainpage_banner">
-		<div class="main_banner_txt_wrap">
-			<div class="main-banner-txt d-flex flex-column align-items-center">
-				<img src="/images/main-banner-txt.png" alt="main-banner-txt" class="mb-5">
-				<a href="/pages/supportProject.html" class="cont-more-btn btn btn-primary rounded-pill text-primary fs-5 px-4 py-2 text-light">자세히 보기</a>
-			</div>
-			<div class="main-banner-icon"><img src="/images/main-banner-icon.png" alt="main-banner-icon"></div>
+	<section class="subpage-cont-wrap-01">
+		<div class="sub-cont-top-banner">
+			<div class="txt-wrap h2">지원사업</div>
 		</div>
 	</section>
-	<section class="main-cont-area-01">
+	<section class="subpage-cont-01">
 		<div class="inner mx-auto">
-			<div class="cotn-item-wrap">
-				<p class="text_wrap h3">About US</p>
-				<p class="text_wrap h3">처음과 같은 마음으로</p>
-				<p class="text_wrap h3">최선을 다하겠습니다.</p>
+			<p class="subpage-cont-title">신청대상</p>
+			<div class="subpage-cont-wrap d-flex gap-3">
+				<img src="/images/4-target-card.png" alt="4-target-card">
+				<img src="/images/5-target-card.png" alt="5-target-card">
 			</div>
 		</div>
 	</section>
-	<section class="main-cont-area-02">
+	<section class="subpage-cont-02">
 		<div class="inner mx-auto">
-			<div class="cont-item-wrap d-flex justify-content-center">
-				<div class="cont-item">
-					<p class="img-area"><img src="/images/main_cont_img01.png" alt="cont-img-01"></p>
-					<div class="txt-area">
-						<p class="cont-title h3">믿음과 신뢰</p>
-						<p class="sub-txt">
-							고객과의 보이지 않는 약속 <br>
-							그 약속을 실천하는 것이 바로 <br>
-							믿음과 신뢰가 아닌가 생각합니다.
-						</p>
-					</div>
+			<p class="subpage-cont-title">지원사업 신청방법</p>
+			<div class="d-flex gap-3 subpage-card-wrap">
+				<div class="subpage-card-conte-01">
+					<p>직접신청</p>
+					<img src="/images/self-card.png" alt="self-card">
 				</div>
-				<div class="cont-item">
-					<p class="img-area"><img src="/images/main_cont_img02.png" alt="cont-img-02"></p>
-					<div class="txt-area">
-						<p class="cont-title h3">자율과 책임</p>
-						<p class="sub-txt">
-							자율과 책임은 <br>
-							주인의식에서 비롯된다고 볼 수 있습니다.
-						</p>
-					</div>
-				</div>
-				<div class="cont-item">
-					<p class="img-area"><img src="/images/main_cont_img03.png" alt="cont-img-03"></p>
-					<div class="txt-area">
-						<p class="cont-title h3">인재양성</p>
-						<p class="sub-txt">
-							인재를 양성하고 발굴하는 것은 <br>
-							우리 사회의 기업들이 <br>
-							추구해야 할 목표입니다.
-						</p>
-					</div>
+				<div class="subpage-card-conte-02">
+					<p>SI메카닉스와 계약</p>
+					<img src="/images/si-card.png" alt="si-card">
 				</div>
 			</div>
 		</div>
-	</section>	
-	<section class="main-cont-area-03">
-		<div class="cont-item-wrap">
-			<div class="cont-item">
-				<p class="txt-area">
-					<p class="cont-title h1 fw-bold">
-						IoT Gateway
-					</p>
-					<p class="sub-txt">
-						IoT 기반의 자료 수집 기술로, 열악한 환경에서도 운영이 가능하도록 <br>
-						방진, 방수용 케이스와 유/무선 통신(TCP/IP, LTE)을 지원합니다.  <br>
-						측정자료생성주기및방식,전송기준은 한국환경공단의 <br>
-						소규모 대기 배출 관리시스템 통신 프로토콜 규격을 기준으로 개발되었습니다.
-					</p>
-				</p>
+	</section>
+	<section class="subpage-cont-03">
+		<div class="inner mx-auto">
+			<div class="title-box d-flex justify-content-between">
+				<div class="left">
+					<p>사물인터넷(IoT) 측정기기 정액지원 금액</p>
+					<p>정액보조금 : 정액보조금이란 특정한 사업의 실시에 대하여 일정액의 보조금을 교부하는 유형을 말한다.</p>
+				</div>
+				<div class="right">
+					<p>단위: 원</p>
+				</div>
 			</div>
-			<a href="/pages/productInfo.html" class="cont-more-btn btn btn-light rounded-pill text-primary fs-5 px-4 py-2">자세히 보기</a>	
+			<table>
+				<thead>
+					<tr>
+						<th>게이트웨이</th>
+						<th>VPN</th>
+						<th>차압계</th>
+						<th>PH계</th>
+						<th>온도계</th>
+						<th>전류계</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1,600,000</td>
+						<td>400,000</td>
+						<td>400,000</td>
+						<td>1,000,000</td>
+						<td>500,000</td>
+						<td>300,000</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="subpage-cont-03-txt-box d-flex align-items-center justify-content-center flex-column">
+				<p>SI메카닉스가 정직한 파트너가 되겠습니다.</p>
+				<p>지원사업 신청, 사물인터넷(IoT) 측정기기 설치 및 사후관리 까지 책임지겠습니다.</p>
+			</div>
 		</div>
-	</section>	
+	</section>
 	<footer class="footer-area">
 		<div class="inner mx-auto d-flex justify-content-between">
 			<div class="left-footer">
@@ -108,11 +103,12 @@
 				<div class="company-info mt-5">
 					<p class="company-title">에스아이메카닉스</p>
 					<p class="company-address">인천 남동구 선수촌 공원로23번길 11(구월동, 네이쳐프라자) 505호</p>
-					<p class="company-fax">fax) 050-4405-437</p>
+					<p class="company-fax">fax) 050-4405-3437</p>
 					<p class="company-phone_email">+82(0)10-4953-5019 | simcs0915@gmail.com</p>
 				</div>
 			</div>
 			<div class="right-footer text-end d-flex flex-column align-items-end justify-content-between pt-5">
+				<!-- <button class="contactus-btn btn btn-light rounded-pill text-primary px-4">문의하기</button> -->
 				<button type="button" class="contactus-btn btn btn-light rounded-pill text-primary px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 					문의하기
 				</button>
@@ -123,6 +119,7 @@
 			</div>
 		</div>
 	</footer>
+
 
 	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -143,8 +140,29 @@
 		</div>
 	</div>
 
+
+
 	<script src="/common/js/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
 	<script>
+		let items = document.querySelectorAll('.item');
+		let startTop = 0;
+		let startMonth = 2024;
+		
+		items.forEach((item, index) => {
+			item.children[0].children[0].innerText = `${startMonth}`
+			startMonth -= 1;
+			
+			item.children[0].style.marginLeft = '50px';
+			if(index%2===1) {
+				item.children[0].style.marginLeft = '-260px';
+				item.children[0].style.textAlign = 'right';
+			}
+
+			if(startTop) {
+				item.style.top = `${startTop}px`;
+			}
+			startTop += 80;
+		});
 		const myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'))
 	</script>
 </body>

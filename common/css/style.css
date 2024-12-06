@@ -7,19 +7,24 @@
 
 .mainpage_banner {
 	position: relative;
-	background:url(/images/main_banner_img01.png);
+	background: #e4f6ff;
+	width: 100%;
 	height: 730px;
 }
 .main_banner_txt_wrap {
-	color: #fff;
-	position: absolute;
-	top: 250px;
-	left: 310px;
-	font-family: Pretendard, sans-serif;
+	height: 100%;
 }
-.main_banner_txt_wrap > p:last-child {
-	margin-top: 30px;
-	font-size: 16px;
+.main_banner_txt_wrap .main-banner-txt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.main_banner_txt_wrap .main-banner-icon {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
 .main-cont-area-01 {
@@ -153,4 +158,80 @@
 	width: 100%;
 	height: 800px;
 	text-align: center;
+}
+
+.subpage-cont-title {
+	font-family: Pretendard, sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+}
+.subpage-cont-01 {
+	background: #fafafa;
+	padding: 40px 0;
+}
+.subpage-cont-01 .inner .subpage-cont-title {
+	text-align: center;
+}
+.subpage-cont-02 {
+	padding: 100px 0;
+}
+.subpage-cont-02 .inner .subpage-cont-title {
+	text-align: left;
+}
+.subpage-card-wrap .subpage-card-conte-01 p,
+.subpage-card-wrap .subpage-card-conte-02 p {
+	font-size: 20px;
+	font-family: Pretendard, sans-serif;
+	font-weight: 700;
+}
+.subpage-cont-03 .inner .left p:first-child {
+	font-size: 25px;
+	font-family: Pretendard, sans-serif;
+	font-weight: 700;
+}
+.subpage-cont-03 .inner .left p:last-child {
+	margin-top: -15px;
+	font-size: 16px;
+	font-family: Pretendard, sans-serif;
+	font-weight: 700;
+} 
+.subpage-cont-03 .inner .right p:last-child {
+	font-size: 16px;
+	font-family: Pretendard, sans-serif;
+	font-weight: 700;
+}
+.subpage-cont-03 table thead tr th {
+	text-align: center;
+	background: #d9d9d9;
+	font-size: 16px;
+	font-family: Pretendard, sans-serif;
+	font-weight: 700;
+	padding: 10px 0;
+}
+.subpage-cont-03 table tbody tr td {
+	border-bottom: 1px solid #d9d9d9;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 16px;
+	font-family: Pretendard, sans-serif;
+	font-weight: 700;
+}
+.subpage-cont-03 .subpage-cont-03-txt-box {
+	background: #f3f3f3;
+	height: 223px;
+	border-radius: 20px;
+	margin: 100px 0;
+}
+.subpage-cont-03 .subpage-cont-03-txt-box p {
+	font-size: 16px;
+	font-family: Pretendard, sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+.subpage-cont-03 .subpage-cont-03-txt-box p:first-child {
+	font-size: 25px;
+} 
+.subpage-cont-03 .subpage-cont-03-txt-box p:last-child {
+	margin-top: -10px;
+	font-size: 30px;
 }
